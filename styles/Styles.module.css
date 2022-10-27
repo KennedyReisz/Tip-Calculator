@@ -9,7 +9,7 @@
 
 .page .container {
   background-color: #fff;
-  box-shadow: 0 0 40px #00000041;
+  box-shadow: 0 0 40px #00000039;
   border-radius: 30px;
   max-width: 1000px;
   width: 90%;
@@ -40,7 +40,7 @@
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 20px;
-  color: #889b99;
+  color: #334543;
 }
 
 /** Bill Input - Bill Area && Left Side */
@@ -61,7 +61,9 @@
   border: 0;
   text-align: right;
   font-size: 32px;
+  font-weight: 700;
   color: #294443;
+  width: 90%;
 }
 
 /*? Select Tips - Left Side */
@@ -75,7 +77,7 @@
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 20px;
-  color: #889b99;
+  color: #334543;
 }
 
 /** Tips PCT - Select Tips && Left Side */
@@ -107,7 +109,7 @@
   outline: 0;
   text-align: center;
   font-size: 20px;
-  font-weight: 650;
+  font-weight: 700;
   color: #294443;
 }
 
@@ -126,7 +128,7 @@
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 20px;
-  color: #889b99;
+  color: #334543;
 }
 
 /** People Input - People Quantity && Left Side */
@@ -142,7 +144,9 @@
   border: 0;
   text-align: right;
   font-size: 32px;
+  font-weight: 700;
   color: #294443;
+  width: 90%;
 }
 
 /*! Right Side */
