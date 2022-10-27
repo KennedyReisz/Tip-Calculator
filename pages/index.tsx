@@ -41,7 +41,29 @@ const App = () => {
           </div>
         </div>
         <div className={styles.rightSide}>
-          <div className={styles.result}></div>
+          <div className={styles.result}>
+            <div className={styles.topArea}>
+              <div className={styles.tipAmount}>
+                <div className={styles.texts}>
+                  <h4>Tip Amount</h4>
+                  <p>/ person</p>
+                </div>
+
+                <h1>$4.27</h1>
+              </div>
+              <div className={styles.total}>
+                <div className={styles.texts}>
+                  <h4>Total</h4>
+                  <p>/ person</p>
+                </div>
+
+                <h1>$32.79</h1>
+              </div>
+            </div>
+            <div className={styles.bottomArea}>
+              <button className={styles.resetButton}>RESET</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -153,9 +153,81 @@
   align-items: center;
 }
 
+/*? Result - Right Side  */
 .rightSide .result {
   background-color: #00474b;
   width: 90%;
   height: 90%;
   border-radius: 30px;
+  padding-top: 80px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/** Tip Amount - Top Area && Result */
+.rightSide .result .topArea .tipAmount {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.rightSide .result .topArea .tipAmount>h1 {
+  color: #39b5a8;
+}
+
+.rightSide .result .topArea .tipAmount .texts h4 {
+  color: #a0c6c6;
+}
+
+.rightSide .result .topArea .tipAmount .texts p {
+  color: #387379;
+}
+
+/** Total - Top Area && Result */
+.rightSide .result .topArea .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rightSide .result .topArea .total .texts h4 {
+  color: #a0c6c6;
+}
+
+.rightSide .result .topArea .total .texts p {
+  color: #387379;
+}
+
+.rightSide .result .topArea .total>h1 {
+  color: #39b5a8;
+}
+
+/*? Bottom Area */
+.rightSide .result .bottomArea {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.rightSide .result .bottomArea .resetButton {
+  width: 80%;
+  height: 50px;
+  margin: 40px;
+  background-color: #26c2ad;
+  color: #014e49;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all ease 0.6s;
+}
+
+.rightSide .result .bottomArea .resetButton:hover {
+  color: #7dfff6;
 }
