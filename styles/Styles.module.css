@@ -66,6 +66,10 @@
   width: 90%;
 }
 
+.page .container .leftSide .billArea .billInput input::placeholder {
+  color: #29444390;
+}
+
 /*? Select Tips - Left Side */
 .page .container .leftSide .selectTip {
   display: flex;
@@ -114,7 +118,7 @@
 }
 
 .page .container .leftSide .selectTip .tipsPct>input::placeholder {
-  color: #3e5e5d;
+  color: #3e5e5dc1;
 }
 
 /*? People Quantity - LeftSide */
@@ -147,6 +151,10 @@
   font-weight: 700;
   color: #294443;
   width: 90%;
+}
+
+.page .container .leftSide .peopleQuantity .peopleInput input::placeholder {
+  color: #29444390;
 }
 
 /*! Right Side */

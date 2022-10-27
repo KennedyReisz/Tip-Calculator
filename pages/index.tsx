@@ -1,10 +1,15 @@
 // Import's
+import { useState, useEffect } from "react";
 import { FaUserAlt } from "react-icons/fa";
 
 // Asset's
 import styles from "../styles/Styles.module.css";
 
 const App = () => {
+  const [billInput, setBillInput] = useState();
+  const [peopleInput, setPeopleInput] = useState();
+  const [customInput, setCustomInput] = useState();
+
   return (
     <div className={styles.page}>
       <div className={styles.container}>
@@ -14,7 +19,7 @@ const App = () => {
 
             <div className={styles.billInput}>
               <p>$</p>
-              <input type="number" />
+              <input type="number" placeholder="142.55" />
             </div>
           </div>
 
@@ -36,7 +41,7 @@ const App = () => {
 
             <div className={styles.peopleInput}>
               <FaUserAlt color="#acbebc" size={24} />
-              <input type="number" />
+              <input type="number" placeholder="4" />
             </div>
           </div>
         </div>
