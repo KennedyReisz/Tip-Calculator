@@ -35,12 +35,14 @@ const App = () => {
             <h2>Number of People</h2>
 
             <div className={styles.peopleInput}>
-              <FaUserAlt color="#acbebc" />
+              <FaUserAlt color="#acbebc" size={24} />
               <input type="number" />
             </div>
           </div>
         </div>
-        <div className={styles.rightSide}></div>
+        <div className={styles.rightSide}>
+          <div className={styles.result}></div>
+        </div>
       </div>
     </div>
   );

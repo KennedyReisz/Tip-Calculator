@@ -11,15 +11,17 @@
   background-color: #fff;
   box-shadow: 0 0 40px #00000041;
   border-radius: 30px;
-  max-width: 1366px;
+  max-width: 1000px;
   width: 90%;
   height: auto;
   display: flex;
-  padding: 60px;
 }
 
 .page .container .leftSide {
   width: 50%;
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .page .container .rightSide {
@@ -84,7 +86,7 @@
 }
 
 .page .container .leftSide .selectTip .tipsPct>button {
-  background-color: #003c3d;
+  background-color: #00474b;
   color: #fff;
   border: 0;
   outline: 0;
@@ -141,4 +143,19 @@
   text-align: right;
   font-size: 32px;
   color: #294443;
+}
+
+/*! Right Side */
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightSide .result {
+  background-color: #00474b;
+  width: 90%;
+  height: 90%;
+  border-radius: 30px;
 }
