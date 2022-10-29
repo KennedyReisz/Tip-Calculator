@@ -37,7 +37,7 @@ const App = () => {
     }
   }, [calc, convertedBill]);
 
-  //? useEffect change convertedPeople
+  //? useEffect update convertedPeople
   useEffect(() => {
     convertedPeople = parseFloat(peopleInput);
   }, [peopleInput])
