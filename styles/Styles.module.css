@@ -171,7 +171,7 @@
   width: 90%;
   height: 90%;
   border-radius: 30px;
-  padding-top: 80px;
+  padding-top: 60px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -181,8 +181,10 @@
 .rightSide .result .topArea .tipAmount {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 70px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .rightSide .result .topArea .tipAmount>h1 {
@@ -201,7 +203,10 @@
 .rightSide .result .topArea .total {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .rightSide .result .topArea .total .texts h4 {
@@ -216,12 +221,34 @@
   color: #39b5a8;
 }
 
+/** Total With People - Top Area && Result */
+.rightSide .result .topArea .totalWithPeoples {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.rightSide .result .topArea .totatotalWithPeoplesl .texts h4 {
+  color: #a0c6c6;
+  font-size: 10px;
+}
+
+.rightSide .result .topArea .totalWithPeoples .texts p {
+  color: #387379;
+}
+
+.rightSide .result .topArea .totalWithPeoples>h1 {
+  color: #39b5a8;
+}
+
 /*? Bottom Area */
 .rightSide .result .bottomArea {
   display: flex;
   height: 100%;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
