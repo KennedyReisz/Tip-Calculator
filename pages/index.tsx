@@ -1,31 +1,35 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 
-// Import's
+//* Import's
 import { useState, useEffect } from "react";
 import { FaUserAlt } from "react-icons/fa";
 
-// Asset's
+//* Asset's
 import styles from "../styles/Styles.module.css";
 
 const App = () => {
+  //? State's
   const [billInput, setBillInput] = useState("");
   const [pct, setPct] = useState(0);
   const [customInput, setCustomInput] = useState("");
   const [tipAmount, setTipAmount] = useState(0);
   const [peopleInput, setPeopleInput] = useState<any>("");
 
+  //? Converted Input's
   const convertedBill = parseFloat(billInput);
-  const convertedPeople = parseFloat(peopleInput);
+  var convertedPeople = parseFloat(peopleInput);
 
+  //? Calculate Tip Function
   const calc = () => {
     if (convertedBill) {
       setTipAmount((pct / 100) * convertedBill);
     }
   };
 
+  //? useEffect Run Calc Function
   useEffect(() => {
     if (customInput) {
-      if (convertedBill) {
+      if (convertedBill && convertedPeople) {
         setTipAmount((parseFloat(customInput) / 100) * convertedBill);
       }
     } else {
@@ -33,6 +37,12 @@ const App = () => {
     }
   }, [calc, convertedBill]);
 
+  //? useEffect change convertedPeople
+  useEffect(() => {
+    convertedPeople = parseFloat(peopleInput);
+  }, [peopleInput])
+
+  //? Reset Button Function
   const handleResetAll = () => {
     setBillInput("");
     setPct(0);
@@ -82,6 +92,7 @@ const App = () => {
               <input
                 type="number"
                 placeholder="Custom"
+                
                 value={customInput}
                 onChange={(e) => setCustomInput(e.target.value)}
               />
@@ -96,6 +107,7 @@ const App = () => {
               <input
                 type="number"
                 placeholder="4"
+                min="0"
                 value={peopleInput}
                 onChange={(e) => [setPeopleInput(e.target.value)]}
               />
@@ -128,7 +140,7 @@ const App = () => {
                   <p>/ person</p>
                 </div>
 
-                <h1>${peopleInput ? (convertedBill + tipAmount) / convertedPeople : "0.00"}</h1>
+                <h1>${billInput && tipAmount && convertedPeople ? (convertedBill + tipAmount) / convertedPeople : "0.00"}</h1>
               </div>
             </div>
             <div className={styles.bottomArea}>
