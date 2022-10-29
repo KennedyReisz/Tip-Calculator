@@ -137,7 +137,7 @@ const App = () => {
               <div className={styles.totalWithPeoples}>
                 <div className={styles.texts}>
                   <h4>Divided for each person</h4>
-                  <p>/ person</p>
+                  <p>/ tip amount + total</p>
                 </div>
 
                 <h1>${billInput && tipAmount && convertedPeople ? (convertedBill + tipAmount) / convertedPeople : "0.00"}</h1>
