@@ -44,11 +44,15 @@ const App = () => {
 
   //? Reset Button Function
   const handleResetAll = () => {
-    setBillInput("");
-    setPct(0);
-    setCustomInput("");
-    setTipAmount(0);
-    setPeopleInput("");
+    if(billInput && tipAmount || tipAmount || peopleInput) {
+      setBillInput("");
+      setPct(0);
+      setCustomInput("");
+      setTipAmount(0);
+      setPeopleInput("");
+    } else {
+      alert("Inputs as empty")
+    }
   }
 
   return (
@@ -65,6 +69,7 @@ const App = () => {
                 placeholder="142.55"
                 value={billInput}
                 onChange={(e) => setBillInput(e.target.value)}
+                style={billInput ? {borderBottom: "#00ff00"} : {border: 0}}
               />
             </div>
           </div>
@@ -92,7 +97,6 @@ const App = () => {
               <input
                 type="number"
                 placeholder="Custom"
-                
                 value={customInput}
                 onChange={(e) => setCustomInput(e.target.value)}
               />
