@@ -69,7 +69,7 @@ const App = () => {
                 placeholder="142.55"
                 value={billInput}
                 onChange={(e) => setBillInput(e.target.value)}
-                style={billInput ? {borderBottom: "#00ff00"} : {border: 0}}
+                style={billInput ? {borderBottom: "1px solid#00474b"} : {border: 0}}
               />
             </div>
           </div>
@@ -99,6 +99,7 @@ const App = () => {
                 placeholder="Custom"
                 value={customInput}
                 onChange={(e) => setCustomInput(e.target.value)}
+                style={customInput ? {borderBottom: "1px solid#00474b"} : {border: 0}}
               />
             </div>
           </div>
@@ -114,6 +115,7 @@ const App = () => {
                 min="0"
                 value={peopleInput}
                 onChange={(e) => [setPeopleInput(e.target.value)]}
+                style={peopleInput ? {borderBottom: "1px solid#00474b"} : {border: 0}}
               />
             </div>
           </div>
