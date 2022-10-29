@@ -16,9 +16,6 @@
 
 [![My Skills](https://skills.thijs.gg/icons?i=next,typescript,css&theme=dark)](https://skills.thijs.gg)
 
-<br />
-<br />
-<a href"https://tipcalculator-six.vercel.app/">Preview</a>
 
 <br />
 
